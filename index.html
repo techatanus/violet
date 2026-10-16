@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff7f8" />
+  <meta name="description" content="Beautiful nails, thoughtful care, and easy WhatsApp bookings." />
+  <title>Violet Nail Studio | Nail Beauty & Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#d85e83;--pink-dark:#b94168;--Violet:#fff3f5;--ink:#30252a;--muted:#75666c;--cream:#fffaf8;--line:#f0dfe4}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}a{color:inherit;text-decoration:none}img{display:block;width:100%;object-fit:cover}.container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,250,248,.94);backdrop-filter:blur(12px);border-bottom:1px solid #f4e8eb}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:700;letter-spacing:-.5px}.brand span{color:var(--pink)}.nav-links{display:flex;gap:28px;align-items:center;font-size:.92rem;color:#5d4d53}.nav-links a:hover{color:var(--pink-dark)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:13px 22px;background:var(--pink);color:white;font:700 .92rem 'DM Sans',sans-serif;cursor:pointer;transition:.2s}.btn:hover{background:var(--pink-dark);transform:translateY(-1px)}.btn.outline{background:transparent;color:var(--pink-dark);border:1px solid #e7a5b8}.menu-toggle{display:none;background:none;border:0;font-size:1.5rem;color:var(--ink)}
+    .hero{padding:62px 0 76px;background:radial-gradient(circle at 10% 15%,#ffe6ed 0,transparent 33%),linear-gradient(135deg,#fff8f8,#fff1f4)}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:56px}.eyebrow{color:var(--pink-dark);font-size:.78rem;text-transform:uppercase;letter-spacing:2.4px;font-weight:700}.hero h1{font:600 clamp(2.8rem,5vw,4.8rem)/1.08 'Playfair Display',serif;letter-spacing:-1.8px;margin:16px 0 20px}.hero h1 em{color:var(--pink);font-weight:500}.hero p{max-width:500px;color:var(--muted);font-size:1.06rem;margin-bottom:28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero-note{display:flex;align-items:center;gap:10px;margin-top:25px;color:var(--muted);font-size:.88rem}.sparkle{color:var(--pink);font-size:1.2rem}.hero-photos{position:relative;padding:0 18px 22px 0}.hero-photos .main-photo{height:490px;border-radius:48% 48% 22px 22px;box-shadow:0 20px 55px #b64f6b24}.hero-photos .small-photo{position:absolute;width:42%;height:190px;left:-30px;bottom:0;border:8px solid var(--cream);border-radius:18px;box-shadow:0 12px 30px #b64f6b20}.photo-tag{position:absolute;right:0;bottom:38px;background:white;padding:13px 18px;border-radius:14px;box-shadow:0 10px 30px #b64f6b1c;font-size:.85rem}.photo-tag strong{display:block;font-family:'Playfair Display',serif;font-size:1.1rem}
+    section{padding:78px 0}.section-head{text-align:center;max-width:620px;margin:0 auto 38px}.section-head h2{font:600 clamp(2rem,3.4vw,3rem)/1.15 'Playfair Display',serif;margin:10px 0 12px}.section-head p{color:var(--muted);margin:0}.services{background:#fff}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service-card{background:var(--cream);border:1px solid #f4e8eb;border-radius:20px;overflow:hidden;transition:.25s}.service-card:hover{transform:translateY(-5px);box-shadow:0 16px 35px #8b3d5712}.service-card img{height:220px}.service-content{padding:22px}.service-content h3{font:600 1.35rem 'Playfair Display',serif;margin:0 0 7px}.service-content p{color:var(--muted);font-size:.92rem;margin:0 0 18px;min-height:48px}.service-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px}.price{font-weight:700;color:var(--pink-dark)}.small-btn{padding:10px 15px;font-size:.83rem}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.about-image{height:430px;border-radius:22px;overflow:hidden}.about-copy h2{font:600 clamp(2rem,3.4vw,3rem)/1.15 'Playfair Display',serif;margin:12px 0 18px}.about-copy p{color:var(--muted)}.features{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0}.feature{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}.check{display:grid;place-items:center;flex:0 0 26px;height:26px;border-radius:50%;background:#ffe4eb;color:var(--pink-dark);font-weight:700}
+    .gallery{background:var(--Violet)}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.gallery-grid img{height:260px;border-radius:16px;transition:.25s}.gallery-grid img:hover{transform:scale(1.02)}.booking{background:#fff}.booking-panel{display:grid;grid-template-columns:.85fr 1.15fr;background:var(--Violet);border-radius:26px;overflow:hidden}.booking-copy{padding:42px}.booking-copy h2{font:600 2.5rem/1.1 'Playfair Display',serif;margin:12px 0}.booking-copy p{color:var(--muted)}.booking-form{background:white;padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:.86rem;font-weight:700}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:11px;font:inherit;background:#fffdfd;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--pink)}.field textarea{resize:vertical;min-height:90px}.booking-form .btn{grid-column:1/-1;width:100%;margin-top:4px}.form-help{grid-column:1/-1;color:var(--muted);font-size:.8rem;margin:0}
+    footer{padding:30px 0;background:#30252a;color:#fff0f3}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.footer-inner p{margin:0;color:#d8c4cb;font-size:.86rem}.footer-brand{font:600 1.35rem 'Playfair Display',serif}.footer-brand span{color:#f29ab3}.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:20;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:white;font-size:1.7rem;box-shadow:0 8px 25px #143b252e;border:3px solid white}.whatsapp-float:hover{transform:translateY(-3px)}
+    @media(max-width:800px){.nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:var(--cream);padding:22px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:18px}.nav-links.open{display:flex}.menu-toggle{display:block}.nav .nav-book{display:none}.hero{padding:42px 0 55px}.hero-grid,.about-grid,.booking-panel{grid-template-columns:1fr}.hero-grid{gap:40px}.hero-photos{max-width:560px;margin:auto;width:100%}.hero-photos .main-photo{height:420px}.service-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:30px}.about-image{height:350px}.gallery-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid img{height:230px}.booking-copy{padding:32px}.booking-form{padding:28px}}
+    @media(max-width:520px){.brand{font-size:1.35rem}.hero h1{font-size:2.8rem}.hero-photos .main-photo{height:340px}.hero-photos .small-photo{height:135px;left:-8px;width:40%;border-width:5px}.photo-tag{right:-2px;bottom:22px;padding:10px 13px}.service-grid{grid-template-columns:1fr}.service-card img{height:230px}.features{grid-template-columns:1fr}.gallery-grid{gap:9px}.gallery-grid img{height:175px}.booking-form{grid-template-columns:1fr;padding:22px}.field.full,.booking-form .btn,.form-help{grid-column:1}.booking-copy h2{font-size:2.1rem}section{padding:58px 0}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">Violet<span>.</span> Nail Studio</a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#booking">Book a Visit</a>
+      </nav>
+      <a class="btn nav-book" href="https://wa.me/254742984368?text=Hello%20Violet%20Nail%20Studio%2C%20I%27d%20like%20to%20book%20an%20appointment.">Book on WhatsApp</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Your little moment of luxury</div>
+          <h1>Beautiful nails.<br><em>Beautiful you.</em></h1>
+          <p>From timeless manicures to stunning nail art, treat yourself to a little self-care and leave with nails you love.</p>
+          <div class="hero-actions"><a class="btn" href="#booking">Book Your Appointment ↗</a><a class="btn outline" href="#services">Explore Services</a></div>
+          <div class="hero-note"><span class="sparkle">✦</span> Thoughtful care · Creative designs · Feel-good beauty</div>
+        </div>
+        <div class="hero-photos">
+          <img class="main-photo" src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1100&q=85" alt="Elegant manicure and nail art" />
+          <img class="small-photo" src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=85" alt="Pink nail polish and manicure tools" />
+          <div class="photo-tag"><strong>A little extra Violet</strong>Made for your moment ✨</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">The menu</div><h2>A little something for your nails</h2><p>Choose your favourite treatment and send your booking straight to WhatsApp.</p></div>
+        <div class="service-grid">
+          <article class="service-card"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=800&q=85" alt="Classic manicure" loading="lazy"><div class="service-content"><h3>Classic Manicure</h3><p>Neat shaping, cuticle care and a polished finish for everyday elegance.</p><div class="service-bottom"><span class="price">From KSh 800</span><button class="btn small-btn book-service" data-service="Classic Manicure">Book now</button></div></div></article>
+          <article class="service-card"><img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=85" alt="Gel nail manicure" loading="lazy"><div class="service-content"><h3>Gel Polish</h3><p>A glossy, vibrant finish for a fresh look that lasts.</p><div class="service-bottom"><span class="price">From KSh 1,200</span><button class="btn small-btn book-service" data-service="Gel Polish">Book now</button></div></div></article>
+          <article class="service-card"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=85" alt="Creative nail art" loading="lazy"><div class="service-content"><h3>Nail Art</h3><p>Pretty details, playful patterns and custom designs made for you.</p><div class="service-bottom"><span class="price">From KSh 1,500</span><button class="btn small-btn book-service" data-service="Nail Art">Book now</button></div></div></article>
+          <article class="service-card"><img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=85" alt="Pedicure treatment" loading="lazy"><div class="service-content"><h3>Pedicure</h3><p>A refreshing foot-care session with a smooth, polished finish.</p><div class="service-bottom"><span class="price">From KSh 1,000</span><button class="btn small-btn book-service" data-service="Pedicure">Book now</button></div></div></article>
+          <article class="service-card"><img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=85" alt="Nail extensions" loading="lazy"><div class="service-content"><h3>Nail Extensions</h3><p>Add length and shape, then personalise your look with your favourite finish.</p><div class="service-bottom"><span class="price">From KSh 2,000</span><button class="btn small-btn book-service" data-service="Nail Extensions">Book now</button></div></div></article>
+          <article class="service-card"><img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?auto=format&fit=crop&w=800&q=85" alt="Nail care and polish" loading="lazy"><div class="service-content"><h3>Nail Repair & Care</h3><p>Gentle care and touch-ups to help your nails look tidy and lovely.</p><div class="service-bottom"><span class="price">From KSh 500</span><button class="btn small-btn book-service" data-service="Nail Repair & Care">Book now</button></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about"><div class="container about-grid">
+      <div class="about-image"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=85" alt="Beauty studio self-care experience" loading="lazy" style="height:100%"></div>
+      <div class="about-copy"><div class="eyebrow">Welcome to Violet Nails Studio</div><h2>Self-care looks good on you.</h2><p>We believe your nail appointment should feel like a pause from the busy day. Whether you love a clean, natural look or bold nail art, we want you to feel comfortable, cared for and confident.</p><div class="features"><div class="feature"><span class="check">✓</span><span>Careful attention to detail</span></div><div class="feature"><span class="check">✓</span><span>Styles for every occasion</span></div><div class="feature"><span class="check">✓</span><span>Friendly, personal service</span></div><div class="feature"><span class="check">✓</span><span>Easy WhatsApp booking</span></div></div><a class="btn" href="#booking">Let's get you booked ↗</a></div>
+    </div></section>
+
+    <section class="gallery" id="gallery"><div class="container"><div class="section-head"><div class="eyebrow">Nail inspiration</div><h2>Your next favourite look</h2><p>Save a style you love and mention it when you book.</p></div><div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=700&q=85" alt="Nail design inspiration one" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=85" alt="Nail design inspiration two" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&q=85" alt="Nail design inspiration three" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=700&q=85" alt="Beauty treatment inspiration" loading="lazy">
+    </div></div></section>
+
+    <section class="booking" id="booking"><div class="container"><div class="booking-panel">
+      <div class="booking-copy"><div class="eyebrow">Let's make it happen</div><h2>Your nail date is waiting.</h2><p>Fill in a few details and we'll open WhatsApp with your booking request ready to send. Your appointment is confirmed once we reply.</p><p>✦ Flexible appointment requests<br>✦ Personalised service<br>✦ Quick, direct communication</p></div>
+      <form class="booking-form" id="bookingForm">
+        <div class="field"><label for="name">Your name *</label><input id="name" name="name" placeholder="e.g. Jane" required></div>
+        <div class="field"><label for="phone">Your phone number</label><input id="phone" name="phone" type="tel" placeholder="e.g. 07xx xxx xxx"></div>
+        <div class="field"><label for="service">Service *</label><select id="service" name="service" required><option value="">Choose a service</option><option>Classic Manicure</option><option>Gel Polish</option><option>Nail Art</option><option>Pedicure</option><option>Nail Extensions</option><option>Nail Repair & Care</option><option>Other / Not sure yet</option></select></div>
+        <div class="field"><label for="date">Preferred date *</label><input id="date" name="date" type="date" required></div>
+        <div class="field"><label for="time">Preferred time</label><select id="time" name="time"><option value="">Any available time</option><option>Morning (9am–12pm)</option><option>Afternoon (12pm–4pm)</option><option>Evening (4pm–7pm)</option></select></div>
+        <div class="field full"><label for="notes">Extra details (optional)</label><textarea id="notes" name="notes" placeholder="Tell us your preferred colour, design or any questions..."></textarea></div>
+        <button class="btn" type="submit">Send Booking via WhatsApp ↗</button><p class="form-help">This opens WhatsApp so you can review and send the message. No payment is taken on this website.</p>
+      </form>
+    </div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><div class="footer-brand">Violet<span>.</span> Nail Studio</div><p>Made with care for your next favourite nail look.</p><p>© <span id="year"></span> Violet Nail Studio</p></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/254742984368?text=Hello%20Violet%20Nail%20Studio%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" title="Chat on WhatsApp">✆</a>
+  <script>
+    const WHATSAPP_NUMBER = '254742984368'; // 0742984368 in international format
+    const bookingForm = document.getElementById('bookingForm');
+    const serviceSelect = document.getElementById('service');
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      const nav = document.getElementById('navLinks');
+      const open = nav.classList.toggle('open');
+      document.getElementById('menuToggle').setAttribute('aria-expanded', String(open));
+      document.getElementById('menuToggle').textContent = open ? '×' : '☰';
+    });
+    document.querySelectorAll('#navLinks a').forEach(link => link.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('menuToggle').setAttribute('aria-expanded', 'false');
+      document.getElementById('menuToggle').textContent = '☰';
+    }));
+    document.querySelectorAll('.book-service').forEach(button => button.addEventListener('click', () => {
+      serviceSelect.value = button.dataset.service;
+      document.getElementById('booking').scrollIntoView({behavior:'smooth'});
+      document.getElementById('name').focus({preventScroll:true});
+    }));
+    // Prevent selecting a date in the past.
+    const dateInput = document.getElementById('date');
+    const localToday = new Date();
+    dateInput.min = `${localToday.getFullYear()}-${String(localToday.getMonth()+1).padStart(2,'0')}-${String(localToday.getDate()).padStart(2,'0')}`;
+    bookingForm.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!bookingForm.reportValidity()) return;
+      const data = new FormData(bookingForm);
+      const details = [
+        'Hello Violet Nail Studio! I would like to request an appointment.',
+        '', `Name: ${data.get('name')}`,
+        data.get('phone') ? `My phone: ${data.get('phone')}` : '',
+        `Service: ${data.get('service')}`,
+        `Preferred date: ${data.get('date')}`,
+        data.get('time') ? `Preferred time: ${data.get('time')}` : '',
+        data.get('notes') ? `Extra details: ${data.get('notes')}` : '',
+        '', 'Please let me know if this time is available. Thank you!'
+      ].filter(Boolean).join('\n');
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(details)}`, '_blank', 'noopener,noreferrer');
+    });
+  </script>
+</body>
+</html>
